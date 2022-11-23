@@ -5,6 +5,7 @@ from tkinter import Button, Frame, Entry, LabelFrame, Tk, END
 
 
 def generate_password(pass_len: int) -> Optional[str]:
+    """Основная функция генерации пароля."""
     if not isinstance(pass_len, int): 
         print(f'Введите число. Вы ввели {pass_len}')
         return
@@ -27,17 +28,8 @@ def copy_to_clipboard():
     return password
 
 
-def say_hi():
-    return 'Hi!'
-
-
-def say_hi_1():
-    return 'Hi!'
-
-
 root = Tk()
 root.title('Генератор паролей')
-#root.iconbitmap('path/to/icon')
 root.geometry('500x300')
 
 # Label Frame
